@@ -1,0 +1,175 @@
+{
+  "name": "Default Mapping",
+  "description": "Default mapping configuration for Squidex CMS integration",
+  "schemas": {
+    "styleGuide": {
+      "type": "styleGuide",
+      "fields": {
+        "name": {
+          "type": "string",
+          "path": "title"
+        },
+        "description": {
+          "type": "string",
+          "path": "description"
+        },
+        "version": {
+          "type": "string",
+          "value": "1.0.0"
+        },
+        "generatedAt": {
+          "type": "string",
+          "value": "{{timestamp}}"
+        },
+        "fullStyleGuide": {
+          "type": "json",
+          "path": "styleGuide"
+        }
+      }
+    },
+    "colorPalette": {
+      "type": "colorPalette",
+      "fields": {
+        "name": {
+          "type": "string",
+          "value": "Color Palette"
+        },
+        "primary": {
+          "type": "string",
+          "colorType": "primary"
+        },
+        "secondary": {
+          "type": "string",
+          "colorType": "secondary"
+        },
+        "accent": {
+          "type": "string",
+          "colorType": "accent"
+        },
+        "warning": {
+          "type": "string",
+          "colorType": "warning"
+        },
+        "danger": {
+          "type": "string",
+          "colorType": "danger"
+        },
+        "light": {
+          "type": "string",
+          "colorType": "light"
+        },
+        "dark": {
+          "type": "string",
+          "colorType": "dark"
+        },
+        "additionalColors": {
+          "type": "array",
+          "colorType": "additional"
+        }
+      }
+    },
+    "typography": {
+      "type": "typography",
+      "fields": {
+        "name": {
+          "type": "string",
+          "value": "Typography System"
+        },
+        "fontFamilies": {
+          "type": "array",
+          "path": "typography.fontFamilies"
+        },
+        "fontSizes": {
+          "type": "array",
+          "path": "typography.fontSizes"
+        },
+        "fontWeights": {
+          "type": "array",
+          "path": "typography.fontWeights"
+        }
+      }
+    },
+    "buttons": {
+      "type": "components",
+      "componentType": "buttons",
+      "fields": {
+        "name": {
+          "type": "string",
+          "value": "Button Component"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "componentProp": "backgroundColor"
+        },
+        "textColor": {
+          "type": "string",
+          "componentProp": "color"
+        },
+        "padding": {
+          "type": "string",
+          "componentProp": "padding"
+        },
+        "borderRadius": {
+          "type": "string",
+          "componentProp": "borderRadius"
+        },
+        "fontSize": {
+          "type": "string",
+          "componentProp": "fontSize"
+        }
+      }
+    },
+    "inputs": {
+      "type": "components",
+      "componentType": "inputs",
+      "fields": {
+        "name": {
+          "type": "string",
+          "value": "Input Component"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "componentProp": "backgroundColor"
+        },
+        "borderColor": {
+          "type": "string",
+          "componentProp": "borderColor"
+        },
+        "padding": {
+          "type": "string",
+          "componentProp": "padding"
+        },
+        "borderRadius": {
+          "type": "string",
+          "componentProp": "borderRadius"
+        }
+      }
+    },
+    "cards": {
+      "type": "components",
+      "componentType": "cards",
+      "fields": {
+        "name": {
+          "type": "string",
+          "value": "Card Component"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "componentProp": "backgroundColor"
+        },
+        "borderRadius": {
+          "type": "string",
+          "componentProp": "borderRadius"
+        },
+        "boxShadow": {
+          "type": "string",
+          "componentProp": "boxShadow"
+        },
+        "padding": {
+          "type": "string",
+          "componentProp": "padding"
+        }
+      }
+    }
+  }
+}

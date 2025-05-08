@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design Analyzer</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Website Design Analyzer</h1>
+
+        <div class="card">
+            <h2>Analyze Website</h2>
+            <div class="form-group">
+                <label for="website-url">Website URL:</label>
+                <input type="text" id="website-url" placeholder="https://example.com">
+            </div>
+            <button id="analyze-btn">Analyze</button>
+        </div>
+
+        <div class="card">
+            <h2>Generate Style Guide</h2>
+            <div class="form-group">
+                <label for="website-urls">Website URLs (one per line):</label>
+                <textarea id="website-urls" placeholder="https://example1.com\nhttps://example2.com"></textarea>
+            </div>
+            <button id="generate-btn">Generate Style Guide</button>
+        </div>
+
+        <div id="results" class="card hidden">
+            <h2>Results</h2>
+            <div id="results-content"></div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
